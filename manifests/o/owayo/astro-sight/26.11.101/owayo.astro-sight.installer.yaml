@@ -1,0 +1,21 @@
+# Created with WinGet Releaser using komac v2.17.2
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+
+PackageIdentifier: owayo.astro-sight
+PackageVersion: 26.11.101
+InstallerType: zip
+NestedInstallerType: portable
+NestedInstallerFiles:
+- RelativeFilePath: astro-sight.exe
+Commands:
+- astro-sight
+Dependencies:
+  PackageDependencies:
+  - PackageIdentifier: Microsoft.VCRedist.2015+.x64
+ReleaseDate: 2026-11-05
+Installers:
+- Architecture: x64
+  InstallerUrl: https://github.com/owayo/astro-sight/releases/download/v26.11.101/astro-sight-x86_64-pc-windows-msvc.zip
+  InstallerSha256: 9406AEE68D7A12A8A6A4767BAA490431AAB8FB50EA7420C84C0EC792C09ADE52
+ManifestType: installer
+ManifestVersion: 1.28.0
